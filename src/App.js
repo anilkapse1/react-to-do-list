@@ -1,27 +1,27 @@
 
 import './App.css';
 import Header from './Header';
+import Data from './Data'
 
 function App() {
+
   return (
-
-    <div class="container">
-      <div class="ctmGrid">
-        <Header imgsrc="https://cdn.pixabay.com/photo/2019/08/09/21/20/james-dean-4395893_960_720.jpg"
-          heroname="Anil Kapse"
-          description="React.js developer"
+    <div className="container">
+      <div className="ctmGrid">
+        <Header imgsrc={Data[0].imgsrc}
+          userName={Data[0].userName}
+          roll={Data[0].roll}
         />
 
-        <Header imgsrc="https://cdn.pixabay.com/photo/2019/05/16/16/50/man-4207514_960_720.jpg"
-          heroname="Rohit Gupta"
-          description="Sr. Software Engineer"
+        <Header imgsrc={Data[1].imgsrc}
+          userName={Data[1].userName}
+          roll={Data[1].roll}
         />
 
-        <Header imgsrc="https://cdn.pixabay.com/photo/2016/01/20/23/10/bowie-1152551_960_720.png"
-          heroname="Jobin Verma"
-          description="Tech Lead"
-        />
-
+      <Header imgsrc={Data[2].imgsrc}
+        userName={Data[2].userName}
+        roll={Data[2].roll}
+      />
       </div>
     </div>
   );
