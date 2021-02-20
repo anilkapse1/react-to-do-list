@@ -9,7 +9,7 @@ function App() {
       <div class="ctmGrid">
         <Header imgsrc="https://cdn.pixabay.com/photo/2019/08/09/21/20/james-dean-4395893_960_720.jpg"
           heroname="Anil Kapse"
-          description="UI developer"
+          description="React.js developer"
         />
 
         <Header imgsrc="https://cdn.pixabay.com/photo/2019/05/16/16/50/man-4207514_960_720.jpg"
