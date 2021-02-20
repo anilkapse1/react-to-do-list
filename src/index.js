@@ -1,30 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-
-const d = new Date();
-let time = 15;
-let greeting = "good morning";
-const ctmColor = {};
-
-if(time >=1 && time < 12){
-  greeting = "good morning!"
-  ctmColor.color="red";
-}
-else if(time >=12 && time < 19 ){
-  greeting="good afternoon!";
-  ctmColor.color="blue";
-}
-else{
-  greeting="good night!";
-  ctmColor.color="orange";
-}
-
+import App from './App';
+import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <div>
-    <h1>greeting! <span style={ctmColor}>{greeting}</span></h1>
-  </div>,
-  document.getElementById("root")
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
 );
+
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();
 

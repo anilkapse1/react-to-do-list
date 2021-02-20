@@ -36,3 +36,31 @@
     transform: rotate(360deg);
   }
 }
+
+
+/* my code start */
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+img{
+  max-width: 100%;
+}
+
+.container{
+  max-width: 768px;
+  margin: 0px auto;
+}
+
+.ctmGrid{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-auto-rows: min-content;
+  grid-gap: 20px;
+}
+
+.card-img{
+  height: 250px;
+}
