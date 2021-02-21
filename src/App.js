@@ -5,23 +5,19 @@ import Data from './Data'
 
 function App() {
 
+  function  callFun(val) {
+    return(
+      <Header imgsrc={val.imgsrc}
+        userName={val.userName}
+        roll={val.roll}
+      />
+    )
+  }
+
   return (
     <div className="container">
       <div className="ctmGrid">
-        <Header imgsrc={Data[0].imgsrc}
-          userName={Data[0].userName}
-          roll={Data[0].roll}
-        />
-
-        <Header imgsrc={Data[1].imgsrc}
-          userName={Data[1].userName}
-          roll={Data[1].roll}
-        />
-
-      <Header imgsrc={Data[2].imgsrc}
-        userName={Data[2].userName}
-        roll={Data[2].roll}
-      />
+        {Data.map(callFun)};
       </div>
     </div>
   );
