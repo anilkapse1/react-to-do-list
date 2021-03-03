@@ -1,25 +1,13 @@
-
+import React from 'react';
 import './App.css';
-import Header from './Header';
-import Data from './Data'
+import Test from './Test';
 
-function App() {
-
-  function  callFun(val) {
+const App=()=>{
     return(
-      <Header imgsrc={val.imgsrc}
-        userName={val.userName}
-        roll={val.roll}
-      />
+        <>
+            <Test/>    
+        </>
     )
-  }
-
-  return (
-    <div className="container">
-      <div className="ctmGrid">
-        {Data.map(callFun)};
-      </div>
-    </div>
-  );
 }
+
 export default App;
