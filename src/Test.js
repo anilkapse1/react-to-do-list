@@ -18,9 +18,13 @@ const Test=()=>{
     }
 
     const addList=()=>{
-        newSetList((oldvalue)=>{
-            return [...oldvalue,getList]
-        })
+        if(getList!=""){
+            newSetList((oldvalue)=>{
+                return [...oldvalue,getList]
+            })
+        }else{
+            return false;
+        }
 
         setList("");
     }
